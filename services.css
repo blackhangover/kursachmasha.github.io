@@ -1,0 +1,260 @@
+@font-face {
+font-family: 'San Francisco Display Regular';
+src: url('fonts/SFUIDisplay-Regular.eot');
+src: url('fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/SFUIDisplay-Regular.woff') format('woff'),
+url('fonts/SFUIDisplay-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'San Francisco Text Heavy';
+src: url('fonts/SFUIText-Heavy.eot');
+src: url('fonts/SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+url('fonts/SFUIText-Heavy.woff') format('woff'),
+url('fonts/SFUIText-Heavy.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+.fH {font-family: 'San Francisco Text Heavy';}
+.fd {font-family: 'San Francisco Display Regular';}
+.menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: dimgray;}
+.menu-main a.current, .menu-main a:hover{color: lightsalmon;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: lightsalmon;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+
+H1{
+    text-align: center;
+    color: lightsalmon;
+    font-family: 'San Francisco display regular';
+    
+}
+H3{
+    text-align: center;
+    font-family: 'San Francisco Text Heavy';
+    font-size: 23px
+    
+}
+
+.headergrid {
+    display: grid;
+    grid-template-areas: "bg"
+                         "text"
+                         "headeritem"
+                         "footer";
+    grid-column: 1;
+    grid-template-rows: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+.headerbg{
+    grid-area: bg;
+    height: 550px;
+    background: url("https://dessange.ru/wp-content/uploads/2021/04/3.png") center center no-repeat;
+}
+.headertext{
+    margin-left: 15%;
+    margin-right: 17%;
+    grid-area: text;
+    font-family: 'San Francisco Display Regular';
+    text-align: center;
+    margin-bottom: 4%;
+}
+.headeritem{
+    grid-area: headeritem;
+    margin-left: 13%;
+    margin-right: 13%;
+    font-family: 'San Francisco Display Regular';
+    display: grid;
+    grid-template-areas: "item1 item2 item3"
+                         "item4 item5 item6";
+    grid-template-columns: auto;
+}
+.item1{
+    grid-area: item1;
+    display: grid;
+    grid-template-areas: "item11 item12"
+                         "item11 item13";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr
+                        10fr;
+}
+.item11{
+    grid-area: item11;
+}
+.item12{
+    grid-area: item12;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.item13{
+    grid-area: item13;
+}
+.item2{
+    grid-area: item2;
+    display: grid;
+    grid-template-areas: "item21 item22"
+                         "item21 item23";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr
+                        10fr;
+}
+.item21{
+    grid-area: item21;
+}
+.item22{
+    grid-area: item22;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.item23{
+    grid-area: item23;
+}
+.item3{
+    grid-area: item3;
+    display: grid;
+    grid-template-areas: "item31 item32"
+                         "item31 item33";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr
+                        10fr;
+
+}
+.item31{
+    grid-area: item31;
+}
+.item32{
+    grid-area: item32;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.item33{
+    grid-area: item33;
+}
+.item4{
+    grid-area: item4;
+    display: grid;
+    grid-template-areas: "item41 item42"
+                         "item41 item43";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr
+                        10fr;
+}
+.item41{
+    grid-area: item41;
+}
+.item42{
+    grid-area: item42;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.item43{
+    grid-area: item43;
+}
+.item5{
+    grid-area: item5;
+    display: grid;
+    grid-template-areas: "item51 item52"
+                         "item51 item53";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr
+                        10fr;
+}
+.item51{
+    grid-area: item51;
+}
+.item52{
+    grid-area: item52;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.item53{
+    grid-area: item53;
+}
+.item6{
+    grid-area: item6;
+    display: grid;
+    grid-template-areas: "item61 item62"
+                         "item61 item63";
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr
+                        10fr;
+}
+.item61{
+    grid-area: item61;
+}
+.item62{
+    grid-area: item62;
+    font-size: 18px;
+    margin-bottom: 5%;
+}
+.item63{
+    grid-area: item63;
+}
+.footer{
+    margin-top: 4%;
+    margin-right: 15%;
+    margin-left: 13%;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "copyright space contacts contacts2";
+  grid-template-columns: 350px 6fr 1fr 120px;
+}
+.footercopyright{
+    grid-area: copyright;
+    text-align: justify;
+    color: rgb(141, 138, 138);
+    font-size: 80%;
+    margin-right: 1%;
+    margin-left: 2%;
+    padding-top: 0%;
+}
+.footerspace{
+    grid-area: space;
+}
+.footercontacts{
+    margin-left: 0%;
+    grid-area: contacts;
+}
+.footercontacts2{
+    grid-area: contacts2;
+}
