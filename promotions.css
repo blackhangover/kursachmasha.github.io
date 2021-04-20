@@ -1,0 +1,304 @@
+@font-face {
+font-family: 'San Francisco Display Regular';
+src: url('fonts/SFUIDisplay-Regular.eot');
+src: url('fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/SFUIDisplay-Regular.woff') format('woff'),
+url('fonts/SFUIDisplay-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'San Francisco Text Heavy';
+src: url('fonts/SFUIText-Heavy.eot');
+src: url('fonts/SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+url('fonts/SFUIText-Heavy.woff') format('woff'),
+url('fonts/SFUIText-Heavy.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+fH {font-family: 'San Francisco Text Heavy';}
+fd {font-family: 'San Francisco Display Regular';}
+.menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: dimgray;}
+.menu-main a.current, .menu-main a:hover{color: lightsalmon;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: lightsalmon;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+
+H1{
+    text-align: center;
+    color: lightsalmon;
+    font-family: 'San Francisco display regular';
+    
+}
+H3{
+    text-align: center;
+    font-family: 'San Francisco Text Heavy';
+    font-size: 23px
+    
+}
+
+.headergrid {
+    display: grid;
+    grid-template-areas: "text"
+                         "sug"
+                         "footer";
+    grid-column: 1;
+    grid-template-rows: auto;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.headertext{
+    margin-left: 15%;
+    margin-right: 17%;
+    grid-area: text;
+    font-family: 'San Francisco Display Regular';
+    font-size: 18px;
+    display: grid;
+    grid-template-areas: "texttext"
+                         "border";
+    margin-bottom: 4%;
+}
+.texttext{
+    margin-top: 3%;
+/*    font-family: 'San Francisco Text Heavy';*/
+    font-size: 25px;
+    grid-area: texttext;
+    margin-bottom: 1%;
+}
+.border{
+    grid-area: border;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #f3f3f3;
+    display: grid;
+    grid-template-areas: "item1"
+                         "item2"
+                         "item3"
+                         "item4";
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+.item1{
+    grid-area: item1;
+    margin-left: 2%;
+    margin-top: 2%
+
+}
+.item2{
+    grid-area: item2;
+    margin-left: 2%;
+
+}
+.item3{
+    grid-area: item3;
+    margin-left: 2%;
+}
+.item4{
+    grid-area: item4;
+    margin-left: 2%;
+
+}
+.hr {
+    margin-left: 10%;
+    margin: 15px 0;
+    height: 2px;
+    max-width: 382px;
+    width: 250px;
+    background: #f3f3f3;
+    display: block;
+}
+.hr1 {
+    margin-left: 10%;
+    margin: 15px 0;
+    height: 2px;
+    max-width: 382px;
+    width: 70px;
+    background: #f3f3f3;
+    display: block;
+}
+.sug{ 
+    grid-area: sug;
+    font-size: 25px;
+    background: #f3f3f3;
+    display: grid;
+    margin-top: 2%;
+    margin-right: 17%;
+    margin-left: 15%;
+    grid-template-areas: "sug1"
+                         "sug2"
+                         "sug3";
+    grid-template-rows: auto;
+}
+.sug1{
+    grid-area: sug1;
+    display: grid;
+    margin-top: 2%;
+    margin-right: 3%;
+    margin-left: 3%;
+    grid-template-areas: "sug11 sug12 sug13 sug14";
+    grid-template-columns: auto;
+    grid-row: 1;
+}
+.sug11{
+    grid-area: sug11;
+    
+    height: 68px;
+    line-height: 68px;
+    background: #fff;
+    text-indent: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    
+
+}
+.sug12{
+    grid-area: sug12;
+    height: 68px;
+    line-height: 68px;
+    background: #fff;
+    text-indent: 20px;
+    width: 280px;
+    box-sizing: border-box;
+}
+.sug13{
+    grid-area: sug13;
+    height: 68px;
+    line-height: 68px;
+    background: #fff;
+    text-indent: 20px;
+    width: 280px;
+    box-sizing: border-box;
+    
+}
+.sug14{
+    grid-area: sug14;
+	height: 68px;
+	background: #000;
+	padding: 0 40px;
+	color: #fff;
+	line-height: 68px;
+	font-size: 18px;
+	border: none;
+	display: inline-block;
+	cursor: pointer;
+	margin: 0;
+	appearance: none;
+    font-family: 'San Francisco Display Regular';
+	border-radius: 0;
+	text-transform: uppercase
+}
+.sug2{
+    grid-area: sug2;
+    margin-top: 1%;
+    margin-left: 3%;
+    cursor: pointer;
+	border: none;
+    height: 68px;
+	line-height: 68px;
+	color: #000;
+	text-indent: 20px;
+	appearance: none;
+	border-radius: 0;
+	box-sizing: border-box;
+	width: 1241px;
+	max-width: 100%;
+	background: #fff url(../pics/carret.svg) no-repeat calc(100% - 17px) center;
+	color: #434b4e
+}
+.sug3{
+    grid-area: sug3;
+    grid-template-areas: "sug31"
+                         "sug32";
+    margin-right: 2%;
+    margin-left: 3%;
+}
+.sug31{
+    grid-area: sug31;
+    margin-top: 1%;
+    border: none;
+    resize: none;
+	width: 1241px;
+    height: 150px;
+	line-height: 1em;
+	padding-top: 20px;
+	text-indent: 0;
+	box-sizing: border-box;
+	line-height: 1.2em
+}
+.sug32{
+    grid-area: sug32;
+    font-size: 14px; 
+    font-family: 'San Francisco Display Regular';
+    margin-left: 3%;
+    margin-bottom: 10px; 
+    margin-top: 10px;
+}
+.footer{
+    margin-top: 4%;
+    margin-right: 1%;
+    margin-left: 3%;
+    grid-area: footer;
+    display: grid;
+    grid-template-areas: "copyright space contacts contacts2";
+  grid-template-columns: 350px 6fr 1fr 120px;
+}
+.footercopyright{
+    grid-area: copyright;
+    text-align: justify;
+    color: rgb(141, 138, 138);
+    font-size: 80%;
+    margin-right: 1%;
+    margin-left: 2%;
+    padding-top: 0%;
+}
+.footerspace{
+    grid-area: space;
+}
+.footercontacts{
+    margin-left: 0%;
+    grid-area: contacts;
+}
+.footercontacts2{
+    grid-area: contacts2;
+}
