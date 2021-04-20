@@ -18,6 +18,10 @@ font-style: normal;
 }
 .fH {font-family: 'San Francisco Text Heavy';}
 .fd {font-family: 'San Francisco Display Regular';}
+.logo{
+    text-align: center;
+
+}
 .menu-main {
     list-style: none;
     margin: 40px 0 5px;
@@ -171,7 +175,7 @@ item4{
 .sug14{
     grid-area: sug14;
 	height: 68px;
-	background: #000;
+	background: lightsalmon;
 	padding: 0 40px;
 	color: #fff;
 	line-height: 68px;
