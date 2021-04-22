@@ -1,0 +1,74 @@
+@font-face {
+font-family: 'San Francisco Display Regular';
+src: url('fonts/SFUIDisplay-Regular.eot');
+src: url('fonts/SFUIDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+url('fonts/SFUIDisplay-Regular.woff') format('woff'),
+url('fonts/SFUIDisplay-Regular.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+@font-face {
+font-family: 'San Francisco Text Heavy';
+src: url('fonts/SFUIText-Heavy.eot');
+src: url('fonts/SFUIText-Heavy.eot?#iefix') format('embedded-opentype'),
+url('fonts/SFUIText-Heavy.woff') format('woff'),
+url('fonts/SFUIText-Heavy.ttf') format('truetype');
+font-weight: normal;
+font-style: normal;
+}
+
+.menu-main {
+    list-style: none;
+    margin: 40px 0 5px;
+    padding: 25px 0 5px;
+    text-align: center;
+    background: white;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+    content: "|";
+    color: #606060;
+    display: inline-block;
+    vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+    text-decoration: none;
+    font-family: 'Ubuntu Condensed', sans-serif;
+    letter-spacing: 2px;
+    position: relative;
+    padding-bottom: 20px;
+    margin: 0 34px 0 30px;
+    font-size: 17px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: dimgray;}
+.menu-main a.current, .menu-main a:hover{color: lightsalmon;}
+.menu-main a:before,
+.menu-main a:after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    top: auto;
+    right: 50%;
+    bottom: -5px;
+    left: 50%;
+    background: lightsalmon;
+    transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}
+H1{
+    text-align: center;
+    color: lightsalmon;
+    font-family: 'San Francisco display regular';
+    
+}
+H3{
+    text-align: center;
+    font-family: 'San Francisco Text Heavy';
+    font-size: 23px
+    
+}
