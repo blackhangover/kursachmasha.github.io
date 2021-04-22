@@ -3,18 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Rachel Green beauty bar</title>
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="promotions.css">
-    <style>
-        input[type="text"] {
-        border: none; /* Убираем рамку */
-        outline: none; /* Убираем свечение в Chrome и Safari */
-        width: 250px;
-        height: 40px;
-        font-size: 17px;
-        font-family: 'San Francisco Display Regular';
-       }
-    </style>
+    <link rel="shortcut icon" href="/pics/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="contacts.css">
+    <link rel="stylesheet" href="online.css">
+    <link rel="stylesheet" href="jquery.fancybox.min.css" />
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script src="jquery.fancybox.min.js"></script>
     </head>
 <body>
     <div class="logo"><a href="index.html"><img src="pics/logo.svg" width="100px" height="100px"></a></div>
@@ -23,7 +17,7 @@
         <li><a href="index.html">Главная</a></li>
         <li><a href="services.html">Услуги</a></li>
         <li><a href="promotions.html" class="current">Акции</a></li>
-        <li><a href="online.html">Онлайн-запись</a></li>
+        <li><a data-fancybox data-src="#modal-form" href="javascript:;">Онлайн-запись</a></li>
         <li><a href="contacts.html">Контакты</a></li>
     </ul>
 <header>
@@ -31,7 +25,31 @@
     
     </div>
     
-    
+    <form method="post" id="modal-form" style="display:none;">
+                <span class="online">
+                <a class="onlinetext">Онлайн-запись</a>
+                <div class="onlineform">
+                    <span class="onlineformname"><input type="text" size="40" placeholder="Ваше имя"></span>
+                    <span class="onlineformphone"><input type="text" size="40" placeholder="Ваш номер телефона"></span>
+                    <span class="onlineformemail"><input type="text" size="40" placeholder="Ваш e-mail"></span>
+                    <select name="salon" class="onlineformoption">
+                    <option>Салон</option>
+                    <option>Деметра (ул.Садовая-Кудринская, д. 19, стр. 1)</option>
+                    <option>Астарта (улица Большая Дорогомиловская, д.14, корп.1)</option>
+                    <option>Дилайн (Ленинский проспект, д.43)</option>
+                    <option>Авилина (улица Лесная, д. 10-16)</option>
+                    <option>Гелион (Зубовский бульвар, д. 31/33)</option>
+                    <option>Декам (Малый Козихинский переулок, д. 12)</option>
+                    <option>Проект Системс (МО, Одинцовский район, деревня Жуковка, д. 58)</option>
+                    <option>Топ Бьюти (Земляной вал, д.52/16, стр.1)</option>
+                    <option>Шик (г. Москва, Коробейников переулок, д. 1)</option>
+                        </select></div>
+                    <span class="online3">
+                    <p class="onlineform31">Обработка заявок производится с 8:00 до 22:00 пн-пт и с 10:00 до 22:00 сб-вс</p>
+                        <input type="submit" class="onlineformbutton" value="Отправить">
+                    <span class="onlineform33"><input type="checkbox" style="margin-bottom: 20px">Согласие на обработку персональных данных
+                </span></span></span>
+                </form>
     
     <div class="footer"> 
         <div class="footercopyright">  
