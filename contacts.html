@@ -6,6 +6,7 @@
     <link rel="shortcut icon" href="/pics/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="contacts.css">
     <link rel="stylesheet" href="online.css">
+    <link rel="stylesheet" href="suggestions.css">
     <link rel="stylesheet" href="jquery.fancybox.min.css" />
     <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
     <script src="jquery.fancybox.min.js"></script>
@@ -21,6 +22,7 @@
         <li><a href="contacts.html" class="current">Контакты</a></li>
     </ul>
 <header>
+    <div class="headergrid">
     <div class="headertext"> 
         <div class="texttext">ОФИС DESANGE
         <div class="hr1"></div></div>
@@ -43,14 +45,15 @@
         <div class="hr"></div></div>
         </div>
     </div>
+    <form>
     <div class="sug">
-        <div class="fd" style="margin-left: 1%; margin-top: 2%">Мы рады Вашим вопросам и предложениям</div>
-            <form>
-            <div class="sug1">
-                <span class="sug11"><input type="text" size="40" placeholder="Ваше имя"></span>
+            <div class="sugtext">Мы рады Вашим вопросам и предложениям
+            <div class="hr"></div></div>
+                <span class="sug1">
+                <span class="sug11"><input type="text" size="40" placeholder="Ваше имя" ></span>
                 <span class="sug12"><input type="text" size="40" placeholder="Ваш номер телефона"></span>
                 <span class="sug13"><input type="text" size="40" placeholder="Ваш e-mail"></span>
-                <input type="submit" class="sug14" value="Отправить"></div>
+                <input type="submit" class="sug14" value="Отправить"></span>
                 <select name="salon" class="sug2">
                 <option>Салон</option>
                 <option>Деметра (ул.Садовая-Кудринская, д. 19, стр. 1)</option>
@@ -64,13 +67,11 @@
                 <option>Шик (г. Москва, Коробейников переулок, д. 1)</option>
                     </select>
             <span class="sug3">
-                <span class="sug31">
                 <textarea placeholder="Ваш вопрос или предложение" class="sug31">
-                </textarea></span>
+                </textarea>
                 <p class="sug32">Обработка заявок производится с 8:00 до 22:00 пн-пт и с 10:00 до 22:00 сб-вс</p>
-                <span class="sug32"><input type="checkbox" style="margin-bottom: 20px">Согласие на обработку персональных данных
-                </span></span></form>
-    </div>
+                <div class="sug33"><input type="checkbox" style="margin-bottom: 20px">Согласие на обработку персональных данных
+                </div></span></div></form>
     
     <form method="post" id="modal-form" style="display:none;">
                 <span class="online">
@@ -119,7 +120,7 @@
                     <img src="pics/github-icon.png">
                 </picture></a>
                 </div>
-    </div>
+    </div></div>
 </header>
 
 </body>
